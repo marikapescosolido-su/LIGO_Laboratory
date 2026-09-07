@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="document">
+    <header class="page-header">
+      <p id="document-subtitle" class="author editable-title" contenteditable="true">
+        Weekly journal
+      </p>
+
+      <h1 id="document-title" class="editable-title" contenteditable="true">
+        Weekly Notes
+      </h1>
+    </header>
+
+    <nav class="editor-toolbar" aria-label="Text formatting">
+      <label class="tool-select">
+        First meeting #
+        <input
+          id="starting-number"
+          class="number-setting"
+          type="number"
+          min="0"
+          step="1"
+          value="0"
+        >
+      </label>
+
+      <button type="button" data-command="bold" aria-label="Bold">
+        <strong>B</strong>
+      </button>
+
+      <button type="button" data-command="italic" aria-label="Italic">
+        <em>I</em>
+      </button>
+
+      <button type="button" data-command="insertUnorderedList">
+        • List
+      </button>
+
+      <button id="add-checklist" type="button">☑ Checklist</button>
+      <button id="insert-break" type="button">┄ Break</button>
+
+      <label class="tool-select">
+        Size
+        <select id="font-size" aria-label="Text size">
+          <option value="3">Normal</option>
+          <option value="2">Small</option>
+          <option value="4">Large</option>
+          <option value="5">Larger</option>
+        </select>
+      </label>
+
+      <span class="color-tool" title="Text color">
+        A
+        <input id="text-color" type="color" value="#29231f">
+        <button id="apply-text-color" type="button">Apply</button>
+      </span>
+
+      <span class="color-tool highlight-tool" title="Highlight color">
+        ▰
+        <input id="highlight-color" type="color" value="#ffe39a">
+        <button id="apply-highlight" type="button">Apply</button>
+      </span>
+
+      <button id="add-comment" type="button">Comment</button>
+      <button id="read-more" type="button">Should read more</button>
+      <button id="add-paper" type="button">Paper</button>
+      <button id="add-quote" type="button">Quote</button>
+      <button id="add-image" type="button">Image</button>
+
+      <label class="tool-select">
+        Image size
+        <select id="image-size" disabled>
+          <option value="25%">25%</option>
+          <option value="50%">50%</option>
+          <option value="75%">75%</option>
+          <option value="100%">100%</option>
+        </select>
+      </label>
+
+      <input id="image-input" type="file" accept="image/*" hidden>
+    </nav>
+
+    <div id="weeks">
+      <section class="week">
+        <div class="week-header">
+          <h2>Meeting #<span class="meeting-number">0</span></h2>
+
+          <div class="meeting-tools">
+            <label class="date-control">
+              Date
+              <input
+                class="meeting-date"
+                type="date"
+                value="2026-08-27"
+              >
+            </label>
+
+            <button class="save-copy" type="button">
+              Save document copy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="week-notes"
+          contenteditable="true"
+          role="textbox"
+          aria-multiline="true"
+        >
+          <p><br></p>
+        </div>
+      </section>
+    </div>
+
+    <div class="page-actions">
+      <button id="add-week" type="button">＋ Add another week</button>
+
+      <div class="save-actions">
+        <span id="save-status" aria-live="polite">
+          Changes save automatically
+        </span>
+
+        <button id="download-website" type="button">
+          Download complete website
+        </button>
+
+        <button id="save-notes" type="button">Save notes</button>
+      </div>
+    </div>
+
+    <aside class="navigation-panel" aria-label="Page navigation">
+      <div class="comment-navigation">
+        <button id="go-read-more" type="button">
+          Go to “Should read more”
+        </button>
+
+        <button id="go-papers" type="button">
+          Go to “Papers”
+        </button>
+
+        <button id="go-meeting" type="button">
+          Go to Meeting #
+        </button>
+      </div>
+    </aside>
+
+    <aside id="comments-panel" class="comments-panel" aria-live="polite">
+      <h2>Comments</h2>
+
+      <div id="comments-list">
+        <p class="no-comments">No comments yet.</p>
+      </div>
+    </aside>
+
+    <section class="collections-area" aria-label="Saved reading collections">
+      <div id="read-more-section" class="collection-box">
+        <h2>Should read more</h2>
+        <div id="read-more-list"></div>
+      </div>
+
+      <div id="papers-section" class="collection-box">
+        <h2>Papers</h2>
+        <div id="papers-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <template id="week-template">
+    <section class="week">
+      <div class="week-header">
+        <h2>Meeting #<span class="meeting-number"></span></h2>
+
+        <div class="meeting-tools">
+          <label class="date-control">
+            Date
+            <input class="meeting-date" type="date">
+          </label>
+
+          <button class="save-copy" type="button">
+            Save document copy
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="week-notes"
+        contenteditable="true"
+        role="textbox"
+        aria-multiline="true"
+      >
+        <p><br></p>
+      </div>
+    </section>
+  </template>
+
+  <dialog id="save-guide">
+    <button
+      id="close-guide"
+      class="close-guide"
+      type="button"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <p class="guide-kicker">Document copy created</p>
+    <h2>Save this meeting to the repository</h2>
+
+    <ol>
+      <li>The formatted meeting file has been downloaded.</li>
+      <li>Open your repository and sign in if required.</li>
+      <li>Select <strong>Add file → Upload files</strong>.</li>
+      <li>
+        Upload the file to a <strong>meeting-notes</strong> folder and
+        commit the change.
+      </li>
+    </ol>
+
+    <p class="download-name">
+      Downloaded file:
+      <strong id="exported-filename"></strong>
+    </p>
+
+    <a
+      class="repo-link"
+      href="https://github.com/"
+      target="_blank"
+      rel="noopener"
+    >
+      Open GitHub
+    </a>
+  </dialog>
+
+  <footer class="template-credit">mpescosolido3</footer>
+
+  <dialog id="meeting-navigator">
+    <button
+      id="close-meeting-navigator"
+      class="close-guide"
+      type="button"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <p class="guide-kicker">Meeting navigation</p>
+    <h2>Go to a meeting</h2>
+
+    <button id="go-latest-meeting" class="latest-meeting-button" type="button">
+      Latest
+    </button>
+
+    <div class="meeting-number-choice">
+      <label for="meeting-number-input">Meeting number</label>
+
+      <input
+        id="meeting-number-input"
+        type="number"
+        min="0"
+        step="1"
+        placeholder="Meeting #"
+      >
+
+      <button id="go-numbered-meeting" type="button">Go</button>
+    </div>
+
+    <p
+      id="meeting-navigation-error"
+      class="navigation-error"
+      aria-live="polite"
+    ></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
