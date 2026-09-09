@@ -1,7 +1,7 @@
 :root {
   font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
-  color: #29231f;
-  background: #f4f0ea;
+  color: #24364b;
+  background: #edf3fa;
 }
 
 * {
@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background: #eaebf4;
+  background: #edf3fa;
 }
 
 button,
@@ -26,12 +26,12 @@ select {
   margin: 0 auto;
   padding: 64px clamp(28px, 7vw, 86px) 90px;
   background: #fff;
-  box-shadow: 0 0 40px rgba(73, 55, 42, 0.08);
+  box-shadow: 0 0 40px rgba(35, 65, 105, 0.08);
 }
 
 .page-header {
   padding-bottom: 28px;
-  border-bottom: 3px solid #4332d9;
+  border-bottom: 3px solid #315f9b;
 }
 
 .editable-title {
@@ -40,13 +40,13 @@ select {
 }
 
 .editable-title:focus {
-  background: #eaebf4;
-  box-shadow: 0 0 0 4px #eaebf4;
+  background: #edf3fa;
+  box-shadow: 0 0 0 4px #edf3fa;
 }
 
 .author {
   margin: 0 0 8px;
-  color: #7a798a;
+  color: #64758b;
   font-size: 0.82rem;
   font-weight: 650;
   letter-spacing: 0.1em;
@@ -55,7 +55,7 @@ select {
 
 h1 {
   margin: 0;
-  color: #4332d9;
+  color: #315f9b;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.65rem, 3.6vw, 2.45rem);
   font-weight: 500;
@@ -73,10 +73,10 @@ h1 {
   width: 100%;
   margin: 24px 0 42px;
   padding: 7px;
-  border: 1px solid #eaebf4;
+  border: 1px solid #edf3fa;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 5px 18px rgba(73, 55, 42, 0.09);
+  box-shadow: 0 5px 18px rgba(35, 65, 105, 0.09);
 }
 
 .editor-toolbar button {
@@ -85,13 +85,13 @@ h1 {
   border: 0;
   border-radius: 6px;
   background: transparent;
-  color: #333043;
+  color: #24364b;
   cursor: pointer;
 }
 
 .editor-toolbar button:hover {
-  background: #dfe2fa;
-  color: #4332d9;
+  background: #e1ebf7;
+  color: #315f9b;
 }
 
 .tool-select,
@@ -100,14 +100,14 @@ h1 {
   align-items: center;
   gap: 5px;
   padding: 4px 7px;
-  color: #6f655d;
+  color: #64758b;
   font-size: 0.75rem;
   font-weight: 650;
 }
 
 .tool-select select {
   padding: 5px;
-  border: 1px solid #e4ddd6;
+  border: 1px solid #cfdaea;
   border-radius: 5px;
   background: #fff;
 }
@@ -115,7 +115,7 @@ h1 {
 .number-setting {
   width: 58px;
   padding: 5px;
-  border: 1px solid #e4ddd6;
+  border: 1px solid #cfdaea;
   border-radius: 5px;
   background: #fff;
 }
@@ -124,7 +124,7 @@ h1 {
   width: 26px;
   height: 26px;
   padding: 2px;
-  border: 1px solid #e4ddd6;
+  border: 1px solid #cfdaea;
   border-radius: 5px;
   background: #fff;
   cursor: pointer;
@@ -133,7 +133,7 @@ h1 {
 .color-tool button {
   min-width: auto;
   padding: 5px 7px;
-  border: 1px solid #e4ddd6;
+  border: 1px solid #cfdaea;
   background: #fff;
   font-size: 0.7rem;
 }
@@ -141,7 +141,7 @@ h1 {
 .week {
   padding: 0 0 48px;
   margin-bottom: 48px;
-  border-bottom: 2px solid #e6a37e;
+  border-bottom: 2px solid #c6d7eb;
 }
 
 .week-header {
@@ -160,7 +160,7 @@ h1 {
 
 h2 {
   margin: 0;
-  color: #4332d9;
+  color: #315f9b;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -170,7 +170,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 9px;
-  color: #8a8179;
+  color: #64758b;
   font-size: 0.78rem;
   font-weight: 650;
   text-transform: uppercase;
@@ -178,45 +178,45 @@ h2 {
 
 .meeting-date {
   padding: 7px 9px;
-  border: 1px solid #dfd5cc;
+  border: 1px solid #cfdaea;
   border-radius: 7px;
   outline: none;
-  background: #fffaf7;
-  color: #5c4d43;
+  background: #f5f8fc;
+  color: #354e6b;
 }
 
 .meeting-date:focus {
-  border-color: #d96b32;
-  box-shadow: 0 0 0 3px #f8e3d7;
+  border-color: #315f9b;
+  box-shadow: 0 0 0 3px #e1ebf7;
 }
 
 .save-copy {
   padding: 8px 11px;
-  border: 1px solid #d96b32;
+  border: 1px solid #315f9b;
   border-radius: 7px;
   background: #fff;
-  color: #b84d22;
+  color: #315f9b;
   font-size: 0.75rem;
   font-weight: 700;
   cursor: pointer;
 }
 
 .save-copy:hover {
-  background: #fae9df;
+  background: #e1ebf7;
 }
 
 .week-notes {
   min-height: 230px;
   padding: 4px 2px;
   outline: none;
-  color: #29231f;
+  color: #24364b;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.02rem;
   line-height: 1.75;
 }
 
 .week-notes:focus {
-  box-shadow: inset 3px 0 #f1c2a7;
+  box-shadow: inset 3px 0 #a9c4e5;
 }
 
 .week-notes p {
@@ -245,11 +245,11 @@ h2 {
 
 .week-notes .checklist input {
   margin-top: 0.45em;
-  accent-color: #4332d9;
+  accent-color: #315f9b;
 }
 
 .week-notes .checklist li:has(input:checked) span {
-  color: #928981;
+  color: #718196;
   text-decoration: line-through;
 }
 
@@ -262,7 +262,7 @@ h2 {
 }
 
 .week-notes img.selected-image {
-  outline: 3px solid rgba(199, 91, 42, 0.28);
+  outline: 3px solid rgba(49, 95, 155, 0.28);
   outline-offset: 4px;
 }
 
@@ -270,7 +270,7 @@ h2 {
   width: 100%;
   margin: 24px 0;
   border: 0;
-  border-top: 2px dotted #dccfc5;
+  border-top: 2px dotted #cfdaea;
 }
 
 .tool-select select:disabled {
@@ -279,16 +279,16 @@ h2 {
 }
 
 .comment-highlight {
-  border-bottom: 2px dotted #4332d9;
-  background: #fff1e8;
+  border-bottom: 2px dotted #315f9b;
+  background: #e8f0fa;
   cursor: help;
 }
 
 .read-more-mark {
   padding: 1px 4px;
   border-radius: 4px;
-  background: #ffe3d3;
-  color: #a9441e;
+  background: #e5f0e8;
+  color: #355d4c;
 }
 
 .read-more-mark::after {
@@ -301,15 +301,15 @@ h2 {
 
 .quote-mark {
   padding: 1px 4px;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 2px solid #98b5a4;
   border-radius: 4px;
-  background: #eee;
-  color: #555;
+  background: #edf4ef;
+  color: #355d4c;
 }
 
 .quote-mark::after {
   content: "  ❝ quote";
-  color: #777;
+  color: #4c715f;
   font-family: "Avenir Next", sans-serif;
   font-size: 0.68em;
   font-weight: 700;
@@ -319,13 +319,13 @@ h2 {
 .paper-mark {
   padding: 1px 4px;
   border-radius: 4px;
-  background: #eee4fa;
-  color: #684d82;
+  background: #deede5;
+  color: #355d4c;
 }
 
 .paper-mark::after {
   content: "  ▤ paper";
-  color: #80639b;
+  color: #4c715f;
   font-family: "Avenir Next", sans-serif;
   font-size: 0.68em;
   font-weight: 700;
@@ -349,34 +349,34 @@ h2 {
   padding: 11px 17px;
   border: 0;
   border-radius: 8px;
-  background: #4332d9;
+  background: #315f9b;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
 }
 
 #add-week:hover {
-  background: #a9441e;
+  background: #254d80;
 }
 
 #save-notes,
 #download-website {
   padding: 10px 16px;
-  border: 1px solid #4332d9;
+  border: 1px solid #315f9b;
   border-radius: 8px;
   background: #fff;
-  color: #b84d22;
+  color: #315f9b;
   font-weight: 700;
   cursor: pointer;
 }
 
 #save-notes:hover,
 #download-website:hover {
-  background: #fae9df;
+  background: #e1ebf7;
 }
 
 #save-status {
-  color: #91877f;
+  color: #64758b;
   font-size: 0.78rem;
 }
 
@@ -384,14 +384,14 @@ h2 {
 .comments-panel {
   margin-top: 24px;
   padding: 24px;
-  border: 1px solid #eadfd6;
+  border: 1px solid #cfdaea;
   border-radius: 10px;
-  background: #fffaf7;
+  background: #f5f8fc;
 }
 
 .navigation-panel {
-  border-color: #cfdddf;
-  background: #eaf1f2;
+  border-color: #c4d8cb;
+  background: #eaf3ed;
 }
 
 .comment-navigation {
@@ -402,10 +402,10 @@ h2 {
 .comment-navigation button {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid #c5d5d8;
+  border: 1px solid #bdd2c4;
   border-radius: 7px;
   background: #fff;
-  color: #45656b;
+  color: #355d4c;
   font-size: 0.78rem;
   font-weight: 700;
   text-align: left;
@@ -413,8 +413,8 @@ h2 {
 }
 
 .comment-navigation button:hover {
-  border-color: #6d9096;
-  background: #dce9eb;
+  border-color: #7fa48e;
+  background: #dcebe1;
 }
 
 .comments-panel h2 {
@@ -426,7 +426,7 @@ h2 {
   grid-template-columns: 1fr auto;
   gap: 6px 20px;
   padding: 13px 8px;
-  border-bottom: 1px solid #eadfd6;
+  border-bottom: 1px solid #cfdaea;
   border-radius: 7px;
   cursor: pointer;
 }
@@ -437,7 +437,7 @@ h2 {
 
 .comment-quote {
   margin: 0;
-  color: #7b6f66;
+  color: #64758b;
   font-size: 0.78rem;
 }
 
@@ -454,7 +454,7 @@ h2 {
 
 .comment-text[contenteditable="true"]:focus {
   background: #fff;
-  box-shadow: inset 0 0 0 1px #d9a88e;
+  box-shadow: inset 0 0 0 1px #a9c4e5;
 }
 
 .reference-item {
@@ -462,16 +462,16 @@ h2 {
   width: 100%;
   padding: 11px 8px;
   border: 0;
-  border-bottom: 1px solid #eadfd6;
+  border-bottom: 1px solid #cfdaea;
   background: transparent;
-  color: #443a33;
+  color: #24364b;
   line-height: 1.4;
   text-align: left;
   cursor: pointer;
 }
 
 .reference-item:hover {
-  background: #fff1e8;
+  background: #e8f0fa;
 }
 
 .collections-area {
@@ -481,35 +481,35 @@ h2 {
   width: 100%;
   margin-top: 60px;
   padding-top: 46px;
-  border-top: 3px solid #d96b32;
+  border-top: 3px solid #315f9b;
 }
 
 .collection-box {
   width: 100%;
   min-height: 180px;
   padding: 22px;
-  border: 1px solid #cfdddf;
+  border: 1px solid #c4d8cb;
   border-radius: 10px;
-  background: #eaf1f2;
+  background: #eaf3ed;
   scroll-margin-top: 30px;
 }
 
 .collection-box h2 {
   margin: 0 0 17px;
-  color: #45656b;
+  color: #355d4c;
 }
 
 .collection-box .reference-item {
   margin-bottom: 7px;
-  border: 1px solid #c5d5d8;
+  border: 1px solid #bdd2c4;
   border-radius: 7px;
   background: #fff;
-  color: #45656b;
+  color: #355d4c;
 }
 
 .collection-box .reference-item:hover {
-  border-color: #6d9096;
-  background: #dce9eb;
+  border-color: #7fa48e;
+  background: #dcebe1;
 }
 
 .delete-comment {
@@ -518,40 +518,40 @@ h2 {
   align-self: center;
   border: 0;
   background: transparent;
-  color: #a9441e;
+  color: #254d80;
   cursor: pointer;
 }
 
 .no-comments {
   margin: 0;
-  color: #91877f;
+  color: #64758b;
   font-size: 0.85rem;
 }
 
 .comment-item:hover,
 .comment-item.is-active {
-  background: #fff1e8;
-  box-shadow: 0 0 0 5px #fff1e8;
+  background: #e8f0fa;
+  box-shadow: 0 0 0 5px #e8f0fa;
 }
 
 .comment-highlight.is-active {
-  outline: 3px solid rgba(199, 91, 42, 0.2);
-  background: #ffd9c4;
+  outline: 3px solid rgba(49, 95, 155, 0.2);
+  background: #d4e4f7;
 }
 
 #meeting-navigator {
   width: min(460px, calc(100% - 32px));
   padding: 32px;
   border: 0;
-  border-top: 6px solid #54777e;
+  border-top: 6px solid #315f9b;
   border-radius: 12px;
-  color: #29231f;
-  box-shadow: 0 24px 70px rgba(40, 55, 58, 0.24);
+  color: #24364b;
+  box-shadow: 0 24px 70px rgba(35, 65, 105, 0.24);
 }
 
 #meeting-navigator::backdrop,
 #save-guide::backdrop {
-  background: rgba(44, 34, 28, 0.48);
+  background: rgba(25, 43, 68, 0.48);
 }
 
 #meeting-navigator h2 {
@@ -565,7 +565,7 @@ h2 {
   padding: 12px;
   border: 0;
   border-radius: 7px;
-  background: #54777e;
+  background: #315f9b;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -577,12 +577,12 @@ h2 {
   gap: 8px;
   margin-top: 18px;
   padding-top: 18px;
-  border-top: 1px solid #d7e1e3;
+  border-top: 1px solid #cfdaea;
 }
 
 .meeting-number-choice label {
   grid-column: 1 / -1;
-  color: #6e7e81;
+  color: #64758b;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -591,7 +591,7 @@ h2 {
 .meeting-number-choice input {
   min-width: 0;
   padding: 10px;
-  border: 1px solid #cbd8da;
+  border: 1px solid #cfdaea;
   border-radius: 7px;
 }
 
@@ -599,7 +599,7 @@ h2 {
   padding: 10px 18px;
   border: 0;
   border-radius: 7px;
-  background: #54777e;
+  background: #315f9b;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -608,7 +608,7 @@ h2 {
 .navigation-error {
   min-height: 1.2em;
   margin: 12px 0 0;
-  color: #a9441e;
+  color: #254d80;
   font-size: 0.82rem;
 }
 
@@ -616,10 +616,10 @@ h2 {
   width: min(560px, calc(100% - 32px));
   padding: 32px;
   border: 0;
-  border-top: 6px solid #4332d9;
+  border-top: 6px solid #315f9b;
   border-radius: 12px;
-  color: #29231f;
-  box-shadow: 0 24px 70px rgba(55, 38, 27, 0.25);
+  color: #24364b;
+  box-shadow: 0 24px 70px rgba(35, 65, 105, 0.25);
 }
 
 #save-guide h2 {
@@ -639,7 +639,7 @@ h2 {
 
 .guide-kicker {
   margin: 0 0 7px;
-  color: #9a8d84;
+  color: #64758b;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -652,7 +652,7 @@ h2 {
   right: 14px;
   border: 0;
   background: transparent;
-  color: #796d65;
+  color: #64758b;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -661,7 +661,7 @@ h2 {
   margin: 20px 0;
   padding: 12px;
   border-radius: 7px;
-  background: #edeeff;
+  background: #e8f0fa;
   font-size: 0.84rem;
 }
 
@@ -669,19 +669,19 @@ h2 {
   display: inline-block;
   padding: 11px 16px;
   border-radius: 8px;
-  background: #4332d9;
+  background: #315f9b;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
 }
 
 .repo-link:hover {
-  background: #a9441e;
+  background: #254d80;
 }
 
 .template-credit {
   margin-top: 70px;
-  color: #aaa19b;
+  color: #718196;
   font-size: 0.66rem;
   letter-spacing: 0.08em;
   text-align: center;
@@ -700,7 +700,7 @@ h2 {
     right: clamp(20px, 3vw, 50px);
     width: 340px;
     margin: 0;
-    box-shadow: 0 12px 32px rgba(73, 55, 42, 0.1);
+    box-shadow: 0 12px 32px rgba(35, 65, 105, 0.1);
   }
 
   .navigation-panel {
@@ -735,4 +735,22 @@ h2 {
     align-items: flex-start;
     flex-direction: column-reverse;
   }
+}
+/* Sage legend and collection accents. */
+.navigation-panel h2 {
+  color: #355d4c;
+}
+
+/* Visible keyboard focus, coordinated with each color family. */
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #759bc9;
+  outline-offset: 3px;
+}
+
+.comment-navigation button:focus-visible,
+.collection-box .reference-item:focus-visible {
+  outline-color: #7fa48e;
 }
