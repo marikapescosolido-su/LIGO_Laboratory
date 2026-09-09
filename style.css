@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background: #f4f0ea;
+  background: #eaebf4;
 }
 
 button,
@@ -31,7 +31,7 @@ select {
 
 .page-header {
   padding-bottom: 28px;
-  border-bottom: 3px solid #d96b32;
+  border-bottom: 3px solid #4332d9;
 }
 
 .editable-title {
@@ -40,13 +40,13 @@ select {
 }
 
 .editable-title:focus {
-  background: #fff4ed;
-  box-shadow: 0 0 0 4px #fff4ed;
+  background: #eaebf4;
+  box-shadow: 0 0 0 4px #eaebf4;
 }
 
 .author {
   margin: 0 0 8px;
-  color: #8a8179;
+  color: #7a798a;
   font-size: 0.82rem;
   font-weight: 650;
   letter-spacing: 0.1em;
@@ -55,7 +55,7 @@ select {
 
 h1 {
   margin: 0;
-  color: #b84d22;
+  color: #4332d9;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.65rem, 3.6vw, 2.45rem);
   font-weight: 500;
@@ -73,7 +73,7 @@ h1 {
   width: 100%;
   margin: 24px 0 42px;
   padding: 7px;
-  border: 1px solid #e4ddd6;
+  border: 1px solid #eaebf4;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 5px 18px rgba(73, 55, 42, 0.09);
@@ -85,13 +85,13 @@ h1 {
   border: 0;
   border-radius: 6px;
   background: transparent;
-  color: #433930;
+  color: #333043;
   cursor: pointer;
 }
 
 .editor-toolbar button:hover {
-  background: #fae9df;
-  color: #a43f1b;
+  background: #dfe2fa;
+  color: #4332d9;
 }
 
 .tool-select,
@@ -160,7 +160,7 @@ h1 {
 
 h2 {
   margin: 0;
-  color: #c75b2a;
+  color: #4332d9;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -245,7 +245,7 @@ h2 {
 
 .week-notes .checklist input {
   margin-top: 0.45em;
-  accent-color: #c75b2a;
+  accent-color: #4332d9;
 }
 
 .week-notes .checklist li:has(input:checked) span {
@@ -279,7 +279,7 @@ h2 {
 }
 
 .comment-highlight {
-  border-bottom: 2px dotted #c75b2a;
+  border-bottom: 2px dotted #4332d9;
   background: #fff1e8;
   cursor: help;
 }
@@ -349,7 +349,7 @@ h2 {
   padding: 11px 17px;
   border: 0;
   border-radius: 8px;
-  background: #c75b2a;
+  background: #4332d9;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -362,7 +362,7 @@ h2 {
 #save-notes,
 #download-website {
   padding: 10px 16px;
-  border: 1px solid #c75b2a;
+  border: 1px solid #4332d9;
   border-radius: 8px;
   background: #fff;
   color: #b84d22;
@@ -616,7 +616,7 @@ h2 {
   width: min(560px, calc(100% - 32px));
   padding: 32px;
   border: 0;
-  border-top: 6px solid #c75b2a;
+  border-top: 6px solid #4332d9;
   border-radius: 12px;
   color: #29231f;
   box-shadow: 0 24px 70px rgba(55, 38, 27, 0.25);
@@ -661,7 +661,7 @@ h2 {
   margin: 20px 0;
   padding: 12px;
   border-radius: 7px;
-  background: #fff4ed;
+  background: #edeeff;
   font-size: 0.84rem;
 }
 
@@ -669,7 +669,7 @@ h2 {
   display: inline-block;
   padding: 11px 16px;
   border-radius: 8px;
-  background: #c75b2a;
+  background: #4332d9;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
